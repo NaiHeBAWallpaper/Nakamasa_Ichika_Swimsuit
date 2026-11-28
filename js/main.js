@@ -44,7 +44,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0292';
@@ -61,12 +62,12 @@ const AUDIO_DETAIL = [
                 "トリニティだから、温室育ちの心優しいお嬢様なんじゃないかって。"
             ],
             English: [
-                "Perhaps you've got the wrong idea about me.",
-                "Thinking that since I'm from Trinity, I must be some kind-hearted, sheltered lady."
+                "Do you perhaps have the wrong idea about us?",
+                "Do you know how dangerous this cute, delicate Trinity lady can be?"
             ],
             Chinese: [
-              	"你是不是对我有什么误会？",
-                "以为我是三一的学生，就一定是在温室里长大的那种温柔大小姐。"
+              	"嗯，您该不会是误会了什么吧？",
+                "觉得我们崔尼蒂的学员再怎么样，也不过是温室里长大的可爱大小姐。"
             ],
             TraditionalChinese: [
                 "你是不是對我有所誤會？",
@@ -75,7 +76,8 @@ const AUDIO_DETAIL = [
             Korean: [
                 "혹시 멋대로 착각하고 계신 거 아닙니까?",
                 "아무리 위험해 봐야, 온실 속의 귀여운 트리니티 아가씨라고."
-            ]
+            ],
+            Thai: ["เข้าใจผิดไปเอง ตามอำเภอใจอยู่หรือเปล่าคะ?","ต่อให้จะอันตรายแค่ไหน ฉันก็เป็นสาวทรีนิตี้ ในเรือนกระจกที่น่ารักอยู่ดีนะ"]
         }
     },
     {
@@ -86,14 +88,14 @@ const AUDIO_DETAIL = [
                 "何かに「首輪」をつける理由は一つ。"
             ],
             English: [
-                "The Justice Task Force is the group that handles all of Trinity's dirty work, you know.",
-                "This choker I always wear... What would you do if I told you it was actually a 'collar'?",
-                "There's only one reason to put a 'collar' on something."
+                "The Justice Task Force takes care of Trinity's toughest jobs.",
+                "You've seen how we all wear chokers. What if I told you that it's actually...a collar?",
+                "There's only one reason you'd put a collar on someone."
             ],
             Chinese: [
-                "正义实现委员会可是专门负责处理三一所有暴力事件的组织哦？",
-                "我一直戴着的这个项圈。如果我说，这其实是“项链”的话……您会怎么做？",
-                "会给什么东西戴上“项圈”的理由只有一个。"
+                "但您可别忘了，我们正义实现部在崔尼蒂可是专门负责处理麻烦事的这样子。",
+                "您看，我们平时不都戴着颈饰吗？如果我说，那其实是“项圈”……您会怎么做呢？",
+                "项圈的作用只有一个。"
             ],
             TraditionalChinese: [
                 "實現正義部，可是將三一的戰鬥事務一手包辦的集團哦？",
@@ -104,7 +106,8 @@ const AUDIO_DETAIL = [
                 "저희 정의실현부는, 트리니티에서 거친 일을 도맡죠.",
                 "다들 차고 다니지 않습니까, 초커. 그게, 실은 '목줄'이라 하면…… 어떻습니까?",
                 "무언가에 목줄을 채우는 이유는 하나밖에 없죠."
-            ]
+            ],
+            Thai: ["ชมรมทวงความยุติธรรมของเรา ต้องทำงานยากๆ ในทรีนิตี้ค่ะ","สิ่งที่ทุกคนห้อยคอไว้ โชกเกอร์น่ะค่ะ ถ้าบอกว่าที่จริงมันคือ 'สายจูง'... จะว่ายังไงเหรอคะ?","เหตุผลที่เราใส่สายจูงกับบางอย่าง มีเพียงข้อเดียวค่ะ"]
         }
     },
     {
@@ -115,14 +118,14 @@ const AUDIO_DETAIL = [
                 "想像、できますよね？"
             ],
             English: [
-                "A sharp sensei like you can probably figure it out.",
-                "And what happens when that 'collar' comes off—",
-                "You can imagine, can't you?"
+                "Since you're smart, Sensei, I'm sure I don't have to spell it out for you.",
+                "And I also shouldn't have to explain what happens when that collar...",
+                "...comes off, right?"
             ],
             Chinese: [
-                "只要是直觉敏锐的老师，我想应该都懂的。",
-                "还有，当那“项圈”被摘下来的时候会发生什么事——",
-                "您应该，能够想象得到吧？"
+                "聪明的老师您，不用我说应该也明白吧。",
+                "如果项圈解开，会发生什么……",
+                "您当然也很清楚吧？"
             ],
             TraditionalChinese: [
                 "我想敏銳的老師，應該明白吧。",
@@ -133,7 +136,8 @@ const AUDIO_DETAIL = [
                 "현명한 선생님께서는, 말하지 않아도 아시겠죠.",
                 "그렇다면 목줄이 풀렸을 때, 어떤 일이 일어나는지도……",
                 "물론, 아시겠죠?"
-            ]
+            ],
+            Thai: ["คนที่หลักแหลมอย่างคุณครู ต่อให้ไม่บอกก็น่าจะรู้นะคะ","งั้นถ้าถอดสายจูงออก ก็อาจเกิดเรื่องอะไรขึ้นมาก็ได้นะ...","แน่นอนว่าคุณครูก็รู้ใช่มั้ยคะ?"]
         }
     },
     {
@@ -143,21 +147,22 @@ const AUDIO_DETAIL = [
                 "これに懲りたら、滅多なこと言っちゃダメっすよ？私が本当に危ないヤツだったら、どうするつもりだったんすか？"
             ],
             English: [
-                "...Whoops, my apologies. I might have gone a bit too far there.",
-                "If this taught you a lesson, you shouldn't say such careless things, y'know? What would you have done if I was actually dangerous?"
+                "...Sorry. My little joke went too far.",
+                "But this is why you shouldn't make such thoughtless promises. What would you have done if I was actually a dangerous person?"
             ],
             Chinese: [
-                "……啊，抱歉。我好像有点演过头了呢。",
-                "如果您能学到教训，以后就别再说那种话了哦？如果我是个真正危险的家伙，您打算怎么办？"
+                "……抱歉。是我开玩笑开过头了这样子。",
+                "但这也要怪您！怎么能随随便便做出那样的承诺呢？如果我真是个危险分子，您又该怎么办这样子？"
             ],
             TraditionalChinese: [
                 "……啊，抱歉。有點過頭了吧。",
-                "如果您能學到教訓，以後就別再說那種話了哦？如果我是個真正危險的傢伙，您打算怎麼辦？"
+                "有學到教訓的話，就別再亂說話了唷？要是我真的是個危險的傢伙，你打算怎麼辦呢？"
             ],
             Korean: [
                 "……죄송해요. 장난이 너무 심했네요.",
-                "이 일이 당신에게 교훈을 준다면, 이런 무주의한 말을 하지 말아야 합니다."
-            ]
+                "그러니까, 왜 그리 안일한 약속을 하고 그러십니까? 만약 제가 정말로 위험한 사람이었으면, 어떻게 하시려고요?"
+            ],
+            Thai: ["ขอโทษค่ะ... ฉันแกล้งแรงไปหน่อยนะคะ","แต่ในเมื่อรู้แล้ว ทำไมถึงกล้า สัญญาอะไรง่ายๆ แบบนั้นล่ะคะ? ถ้าเกิดฉันเป็น คนอันตรายขึ้นมาจริงๆ แล้วจะรับมือยังไงคะ?"]
         }
     },
     {
@@ -167,12 +172,12 @@ const AUDIO_DETAIL = [
                 "今日のことは、墓まで持ってくっすよ。二人で。"
             ],
             English: [
-                "Haha... Well, I'm only like this in front of you, Sensei. Also...",
-                "We're taking what happened today to our graves. Both of us."
+                "Haha. This is for your eyes only, Sensei. So...",
+                "We're taking this little incident to the grave, okay?"
             ],
             Chinese: [
-                "哈哈……算了，我也只会在老师面前这样啦。还有就是……",
-                "今天的事，我们要带到坟墓里去哦。我们两个人。"
+                "哈哈。我在老师面前才会这样子啦。所以……",
+                "今天的事，就当做我们之间一辈子的秘密吧，这样子？"
             ],
             TraditionalChinese: [
                 "哈哈，嗯……這種事情只會在老師面前做啦。還有……",
@@ -181,7 +186,8 @@ const AUDIO_DETAIL = [
             Korean: [
                 "하하. 선생님 앞에서만요. 그러니까……",
                 "오늘 일은, 둘이서 무덤까지 가져가는 검다?"
-            ]
+            ],
+            Thai: ["แหะๆ แค่ตอนที่อยู่ต่อหน้าคุณครู เท่านั้นค่ะ เพราะงั้น...","เรื่องวันนี้ให้เป็นความลับของเรา 2 คน จนเราเป็นปุ๋ยกันเลยนะคะ?"]
         }
     }
 ];
@@ -293,7 +299,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -463,6 +469,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -476,6 +492,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -485,7 +503,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
